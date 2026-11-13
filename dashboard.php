@@ -36,15 +36,18 @@ try {
     <div class="container">
         <div class="card bg-white border mb-4">
             <div class="card-body p-4">
-                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
-                    <div>
+                <div class="row align-items-center g-3">
+                    <div class="col-auto">
+                        <img src="assets/img/logo.svg" alt="Logo" width="64" height="64" class="img-fluid rounded border p-1 bg-light">
+                    </div>
+                    <div class="col">
                         <div class="badge bg-light text-dark border mb-2 px-3 py-1 rounded-pill fw-normal">
                             <i class="bi bi-person-check me-1"></i> Masuk sebagai: <?= htmlspecialchars($_SESSION['username']) ?>
                         </div>
                         <h2 class="fw-bold text-dark mb-1">Selamat Datang di Manajemen Pegawai!</h2>
                         <p class="text-muted mb-0">Kelola dan pantau data pegawai dengan rapi dan mudah.</p>
                     </div>
-                    <div class="d-flex flex-wrap gap-2">
+                    <div class="col-12 col-lg-auto d-flex flex-wrap gap-2 mt-3 mt-lg-0">
                         <a href="tambah.php" class="btn btn-dark">
                             <i class="bi bi-plus-lg"></i> Tambah Pegawai
                         </a>
