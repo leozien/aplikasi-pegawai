@@ -1,0 +1,10 @@
+USE `db_pegawai`;
+
+CREATE TABLE IF NOT EXISTS `pegawai` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `nip` VARCHAR(50) NOT NULL UNIQUE,
+    `nama` VARCHAR(100) NOT NULL,
+    `email` VARCHAR(100) NOT NULL,
+    `jabatan` VARCHAR(100) NOT NULL,
+    `no_telepon` VARCHAR(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
